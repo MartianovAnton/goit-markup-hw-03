@@ -36,7 +36,7 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1158px;
+  width: 1188px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -333,5 +333,28 @@ body {
   padding-top: 96px;
   padding-bottom: 92px;
 }
+.list-buttons:not(:last-child) {
+  margin-right: 24px;
+}
+
 /* ===========//portfolio-buttons//===== */
+/* ============Project Card============ */
+.project-card-conteiner {
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+
+.project-card-list {
+}
+
+.card-border {
+  border: 1px solid #e7e9fc;
+}
+/* ============/Project Card/============ */
 /* ==========//PORTFOLIO//============ */
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+}
