@@ -36,7 +36,7 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1188px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -65,10 +65,12 @@ body {
 
 /* ===============LOGO============== */
 .logo {
+  font-family: "Raleway";
+
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
+
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -77,28 +79,12 @@ body {
 }
 
 .header-logo-studio {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-color);
 }
-.footer-logo-studio {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-footer-color);
-}
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 /* ===============/LOGO/============== */
 .menu {
   display: flex;
@@ -107,8 +93,6 @@ body {
 .flex-list {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .menu-item:not(:last-child) {
   margin-right: 40px;
@@ -136,12 +120,14 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  margin-right: 40px;
 }
 
 .mail:hover,
 .mail:focus {
   color: var(--hover-focus-color);
+}
+.address-list {
+  margin-right: 40px;
 }
 /* ==========/Contacts/========= */
 
@@ -160,7 +146,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 496px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   text-align: center;
 }
 
@@ -180,6 +166,7 @@ body {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
+  border: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -195,7 +182,6 @@ body {
 .secondary-flex-list {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .secondary-section {
   padding-top: 120px;
@@ -218,11 +204,13 @@ body {
 .secondary-section-list:not(:last-child) {
   margin-right: 24px;
 }
+.secondary-section-list {
+  width: 264px;
+}
 
 /* ==================/Section2/======== */
 /* ============What are we doing======= */
 .works-container {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -234,10 +222,11 @@ body {
   color: var(--title-color);
   text-transform: capitalize;
   margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 496px;
+
   text-align: center;
+}
+.works-container-list {
+  width: 360px;
 }
 .works-container-list:not(:last-child) {
   margin-right: 24px;
@@ -247,14 +236,16 @@ body {
 
 /* ==============Team============ */
 .team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team-section {
   background-color: var(--team-section-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-img {
   background-color: var(--main-background-color);
+  width: 264px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img:not(:last-child) {
   margin-right: 24px;
@@ -268,6 +259,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-secondary-text {
   line-height: 1.5;
@@ -279,43 +271,50 @@ body {
 }
 .team-card-wrapper {
   padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 /* ==============/Team/============ */
 /* ============footer============= */
+.footer-logo-studio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-footer-color);
+}
 .footer-text-description {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-footer-color);
   width: 264px;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .footer {
   background-color: var(--footer-beckground-color);
-}
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-right: 0;
 }
+
 /* ============/footer/============= */
 
 /* ========== PORTFOLIO===+++====== */
 /* ===========portfolio-buttons===== */
 .portfolio-buttons {
   color: var(--blue-text-color);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  font-weight: 500;
   padding: 12px 24px;
-  width: 126px;
   height: 48px;
   background: var(--team-section-color);
   border: 1px solid var(--text-footer-color);
   border-radius: 4px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #4d5ae5;
@@ -327,11 +326,12 @@ body {
   background: var(--hover-focus-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-color: transparent;
 }
 .portfolio-buttons-conyainer {
   padding-top: 96px;
   padding-bottom: 92px;
+  justify-content: center;
 }
 .list-buttons:not(:last-child) {
   margin-right: 24px;
@@ -345,10 +345,13 @@ body {
 }
 
 .project-card-list {
+  width: 360px;
 }
 
 .card-border {
   border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
 }
 /* ============/Project Card/============ */
 /* ==========//PORTFOLIO//============ */
